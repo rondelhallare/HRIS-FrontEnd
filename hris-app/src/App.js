@@ -1,18 +1,20 @@
-import Header from "./Components/LogIn/header";
-import Form from "./Components/LogIn/form";
+import Header from "./Components/LogIn/Header";
+import Form from "./Components/LogIn/Form";
+import Box from "./Components/LogIn/Box";
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <Router>
-      <Route path = "/LogIn">
-            <Header />
-            <Form />
+    // <Router>
+    //   <Route path = "/LogIn" component = {Box}>
+    //         <Header />
+    //         <Form />
+            
 
-       </Route>
-    </Router>
+    //    </Route>
+    // </Router>
   
-
+    <Box />
   )
   
 }
