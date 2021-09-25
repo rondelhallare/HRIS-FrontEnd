@@ -1,6 +1,6 @@
 import Header from "./Components/LogIn/Header";
 import Form from "./Components/LogIn/Form";
-import Box from "./Components/LogIn/Box";
+import Back from "./Components/LogIn/Back";
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     //    </Route>
     // </Router>
   
-    <Box />
+    <Back />
   )
   
 }

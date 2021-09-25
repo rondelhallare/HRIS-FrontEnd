@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import { Button } from '@mui/material';
+import { Box } from '@mui/system';
 
 function Form() {
     return (
-        <div>
+        <Box sx = {{
+            bgcolor: 'white',
+
+        }}>
             <label className="user">Username</label><br></br>
             <input type="text" name="Username" id="userN" className="userName"></input>
 
@@ -12,8 +17,10 @@ function Form() {
 
             <br></br>
             <br></br>
-            <input type="button" name="sign" id="log" value="Sign In" className="btn"></input>
-        </div>
+            <Button color="secondary" variant="contained">
+                    Sign In
+                </Button>
+        </Box>
     )
 }
 
