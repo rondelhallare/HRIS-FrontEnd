@@ -19,6 +19,7 @@ function Back() {
             display: 'flex',
             textAlign: 'center',
             justifyContent: 'center',
+            minHeight: '60vh',
         }
         }
         >

@@ -86,6 +86,7 @@ function Form() {
                     <Button color="secondary" variant="contained" sx={{
                         fontSize: '20px',
                         fontWeight: 'medium',
+                        fontColor: '#FFFFFF',
                     }}>
                         Sign In
                     </Button>

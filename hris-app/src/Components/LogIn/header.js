@@ -22,7 +22,7 @@ const Header = () => {
 
 
             <Typography variant="h1" sx={{
-                fontSize: '30px',
+                fontSize: '80px',
                 fontWeight: 'Bold',
             }}>
                 HRIS
@@ -31,6 +31,8 @@ const Header = () => {
             <Typography variant="h2" sx={{
                 fontSize: '25px',
                 fontWeight: 'medium',
+                pb: '10px',
+                m: '20px',
             }}>
                 “The only place where SUCCESS comes first
                 before WORK is in the dictionary.”
