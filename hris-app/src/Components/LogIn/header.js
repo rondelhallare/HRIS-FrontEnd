@@ -1,20 +1,41 @@
 import { Box } from '@mui/system';
+import { Typography } from '@mui/material';
+import Logo from './Logo'
 
 const Header = () => {
     return (
         <Box sx={{
+            bgcolor: 'primary.main',
             display: 'flex',
-            textAlign: 'center',
+            flexDirection: 'column',
             justifyContent: 'center',
-            bgcolor: 'secondary.main',
+            mx: 'auto',
+            width: '80vh',
+            p: 0,
+            m: 0,
+            borderRadius: '10px 0 0 10px',
 
         }}>
-            <header className="leftHeader">
+            <Box>
+                <Logo />
+            </Box>
 
-                <h1>HRIS</h1>
-                <h2>“The only place where SUCCESS comes first
-                    before WORK is in the dictionary.”</h2>
-            </header>
+
+            <Typography variant="h1" sx={{
+                fontSize: '30px',
+                fontWeight: 'Bold',
+            }}>
+                HRIS
+            </Typography>
+
+            <Typography variant="h2" sx={{
+                fontSize: '25px',
+                fontWeight: 'medium',
+            }}>
+                “The only place where SUCCESS comes first
+                before WORK is in the dictionary.”
+            </Typography>
+
         </Box>
 
     )

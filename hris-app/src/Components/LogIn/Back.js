@@ -6,21 +6,22 @@ import Form from './Form';
 function Back() {
     return (
         <Box sx = {{
-            bgcolor: 'green',
-            height: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            textAlign: 'center',
+            justifyContent: 'center',
+            bgcolor: 'secondary.main',
+            minHeight: '100vh',
+            width: 'auto',
         }}
         >
         <Box sx={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
+            display: 'flex',
             textAlign: 'center',
             justifyContent: 'center',
-            minHeight: '50vh',
-            minWidth: '50vh',
         }
         }
         >
-           
                 <Header />
                 <Form />
         </Box>
