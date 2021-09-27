@@ -1,14 +1,17 @@
 import React from 'react'
 import { Box } from '@mui/system';
-import { Typography } from '@mui/material';
-import id from '../../Assets/hand.png'
+import hand from '../../Assets/hand.png'
 
-const miniLogo = () => {
+const MiniLogo = () => {
     return (
-        <Box>
-             <img src = {hand} alt = "" height = {100}/>
+        <Box sx ={{
+            display: 'flex',
+            justifyContent: 'right',
+            alignItems: 'right',
+        }}>
+             <img src = {hand} alt = "" height = {80}/>
         </Box>
     )
 }
 
-export default miniLogo
+export default MiniLogo

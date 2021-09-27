@@ -13,7 +13,7 @@ const Header = () => {
             width: '80vh',
             p: 0,
             m: 0,
-            borderRadius: '10px 0 0 10px',
+            borderRadius: '20px 0 0 20px',
 
         }}>
             <Box>
