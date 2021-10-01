@@ -36,7 +36,7 @@ function Form() {
                 }}>
                     <Typography sx={{
                         fontWeight: 'bold',
-                        fontSize: '35px',
+                        fontSize: '40px',
 
 
                     }}
@@ -58,7 +58,7 @@ function Form() {
                         defaultValue=""
 
                         sx={{
-                            width: '80%',
+                            width: '100%',
                             borderRadius: '20px',
 
                         }}
@@ -79,7 +79,7 @@ function Form() {
                         label="Required"
                         defaultValue=""
                         sx={{
-                            width: '80%',
+                            width: '100%',
                             borderRadius: '20px',
                         }}
                     />
@@ -92,9 +92,10 @@ function Form() {
                         alignItems: 'center',
                     }}>
                         <Button color="secondary" variant="contained" sx={{
-                            fontSize: '20px',
+                            fontSize: '25px',
                             fontWeight: 'medium',
-                            fontColor: '#FFFFFF',
+                            color: '#FFFFFF',
+                            borderRadius: '10px'
                         }}>
                             Sign In
                         </Button>
