@@ -70,7 +70,7 @@ function Form() {
                         fontWeight: 'bold',
                         fontSize: '25px',
                         fontFamily: 'Montserrat',
-                        pb: '5px',
+                        pb: '8px',
                     }}>
                         Password</Typography>
                     <TextField
