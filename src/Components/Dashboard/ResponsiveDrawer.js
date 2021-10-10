@@ -31,8 +31,9 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div>
-      <Toolbar />
+      
       <Typography sx ={{
+        bgcolor: 'primary.main',
         fontSize: '50px',
         fontWeight: 'Bold',
         textAlign: 'center',
@@ -87,8 +88,8 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+          <Typography variant="h6" noWrap component="div" sx = {{ fontSize: '40px', fontWeight: 'bold', pb: '2px'}}>
+            DASHBOARD
           </Typography>
         </Toolbar>
       </AppBar>
