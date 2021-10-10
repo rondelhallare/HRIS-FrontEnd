@@ -1,17 +1,26 @@
-import Header from "./Components/LogIn/Header";
-import Form from "./Components/LogIn/Form";
 import Back from "./Components/LogIn/Back";
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import './App.css'
 import Body from "./Components/Dashboard/Body";
+import UserProf from "./Components/UserProfile/UserProf";
+import { Button } from '@mui/material';
+import { Switch, Route, Link } from 'react-router-dom'
+import './App.css'
+
+
 
 function App() {
   return (
-    <Back />
-    
+    <Switch>
+
+      <Route exact path='/LogIn' component = {Back} />
+      <Route exact path = '/Dashboard' component = {Body} />
+      <Route exact path = '/UserProfile' component = {UserProf} />
+
+
+    </Switch>
+
 
   )
-  
+
 }
 
 export default App;
