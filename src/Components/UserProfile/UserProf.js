@@ -1,25 +1,29 @@
 import { Box } from '@mui/system';
-import { Typography } from '@mui/material';
-
 import React from 'react'
+import EmployeeBox2 from './EmployeeBox2';
+import SimpleAccordion from './SimpleAccordion';
 
-const UserProf = () => {
+function UserProf() {
     return (
-        <Box>
-            <Box>
-            <Typography>
-                USER PROFILE
-            </Typography>
-            </Box>
-
-            <Box>
-                Box 1
-            </Box>
-
-            <Box>
-                Box 2
-            </Box>
+       <Box sx = {{
+        display: 'flex',
+        alignItems: 'center',
+        textAlign: 'center',
+        justifyContent: 'center',
+        bgcolor: 'white',
+        minHeight: '100vh',
+        width: 'auto',
+       }}>
+        <Box sx = {{
+            display: 'flex',
+            textAlign: 'center',
+            justifyContent: 'center',
+            minHeight: '60vh',
+        }}>
+            <SimpleAccordion />
         </Box>
+           
+       </Box>
     )
 }
 
