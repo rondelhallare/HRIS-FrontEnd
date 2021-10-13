@@ -7,12 +7,17 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EmployeeBox2 from './EmployeeBox2';
 import EmployeeBox1 from './EmployeeBox1';
 import UserTitle from './UserTitle';
+import EmployeeButton from './EmployeeButton';
+import UserAvatar from './UserAvatar';
+import { Box } from '@mui/system';
 
 export default function SimpleAccordion() {
     return (
-        <div>
+        <Box>
 
             <UserTitle />
+
+            <UserAvatar />
 
             <Accordion sx={{ bgcolor: 'secondary.main', }}>
                 <AccordionSummary
@@ -20,12 +25,15 @@ export default function SimpleAccordion() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
+
                     <Typography sx={{
                         fontWeight: 'bold',
                         fontSize: '20px',
+                        color: '#FFFFFF',
                     }}>
                         Employee Information
                     </Typography>
+
 
                 </AccordionSummary>
 
@@ -33,7 +41,9 @@ export default function SimpleAccordion() {
 
                     <Typography>
                         <EmployeeBox1 />
+                        <EmployeeButton />
                     </Typography>
+
 
                 </AccordionDetails>
 
@@ -46,9 +56,11 @@ export default function SimpleAccordion() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
+
                     <Typography sx={{
                         fontWeight: 'bold',
                         fontSize: '20px',
+                        color: '#FFFFFF',
                     }}>
                         Employee Details
                     </Typography>
@@ -59,11 +71,12 @@ export default function SimpleAccordion() {
 
                     <Typography>
                         <EmployeeBox2 />
+                        <EmployeeButton />
                     </Typography>
 
                 </AccordionDetails>
 
             </Accordion>
-        </div>
+        </Box>
     );
 }

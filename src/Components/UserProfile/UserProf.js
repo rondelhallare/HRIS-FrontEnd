@@ -1,6 +1,5 @@
 import { Box } from '@mui/system';
 import React from 'react'
-import EmployeeBox2 from './EmployeeBox2';
 import SimpleAccordion from './SimpleAccordion';
 
 function UserProf() {

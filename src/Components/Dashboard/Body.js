@@ -9,7 +9,7 @@ function Body() {
     return (
         <Box>
             <NavBar />
-            <ResponsiveDrawer />
+    
         </Box>
     )
 }
