@@ -4,6 +4,7 @@ import UserProf from "./Components/UserProfile/UserProf";
 import { Button } from '@mui/material';
 import { Switch, Route, Link } from 'react-router-dom'
 import './App.css'
+import NavBar from "./Components/Navigation/NavBar";
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <Route exact path='/LogIn' component = {Back} />
       <Route exact path = '/Dashboard' component = {Body} />
       <Route exact path = '/UserProfile' component = {UserProf} />
+      <Route exact path = '/Navigation' component = {NavBar} />
 
 
     </Switch>
