@@ -1,10 +1,11 @@
 import Back from "./Components/LogIn/Back";
 import Body from "./Components/Dashboard/Body";
 import UserProf from "./Components/UserProfile/UserProf";
-import { Button } from '@mui/material';
-import { Switch, Route, Link } from 'react-router-dom'
-import './App.css'
 import NavBar from "./Components/Navigation/NavBar";
+import { Switch, Route, Link, BrowserRouter as router } from 'react-router-dom'
+import './App.css'
+import TimeBody from "./Components/TimeLogs/TimeBody";
+
 
 
 
@@ -12,11 +13,12 @@ function App() {
   return (
     <Switch>
 
-      <Route exact path='/LogIn' component = {Back} />
-      <Route exact path = '/Dashboard' component = {Body} />
-      <Route exact path = '/UserProfile' component = {UserProf} />
-      <Route exact path = '/Navigation' component = {NavBar} />
+      <Route path='/LogIn' component = {Back} />
+      <Route path = '/Dashboard' component = {Body} />
+      <Route path = '/UserProfile' component = {UserProf} />
+      <Route path = '/Navigation' component = {NavBar} />
 
+      <Route path = '/TimeLogs' component = {TimeBody} />
 
     </Switch>
 
