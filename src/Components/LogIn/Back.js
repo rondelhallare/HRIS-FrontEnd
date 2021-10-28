@@ -14,6 +14,7 @@ function Back() {
                 bgcolor: 'secondary.main',
                 minHeight: '100vh',
                 width: 'auto',
+
             }}
             >
                 <Box sx={{
@@ -21,6 +22,8 @@ function Back() {
                     textAlign: 'center',
                     justifyContent: 'center',
                     minHeight: '60vh',
+                    boxShadow: 10,
+                    borderRadius: '20px',
                 }
                 }
                 >
