@@ -6,6 +6,7 @@ const TimeDisplay = () => {
         <Box sx = {{
             borderRadius: '10px',
             bgcolor: 'secondary.main',
+            boxShadow: 8,
 
         }}>
             <Box color="secondary" sx={{

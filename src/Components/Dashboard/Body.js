@@ -1,9 +1,13 @@
 import React from 'react'
 import { Box } from '@mui/system';
-import { Typography } from '@mui/material';
 import ClockIn from './ClockIn';
 import BodyTitle from './BodyTitle';
 import TimeDisplay from './TimeDisplay';
+import BoxContent from './BoxContent';
+import Content1 from './Content1';
+import EventHighlight from './EventHighlight';
+import UserDisplay from './UserDisplay';
+import VerseDisplay from './VerseDisplay';
 
 
 
@@ -14,20 +18,82 @@ function Body() {
             <BodyTitle />
 
             <Box sx={{
-                 display: 'flex',
-                 alignItems: 'left',
-                 textAlign: 'left',
-                 justifyContent: 'left',
+                display: 'flex',
+                flexDirection: 'row',
+                p: '10px',
+                m: '10px',
             }}>
 
-            test
+                <Box>
+                    <Box sx={{
+                        display: 'flex',
+                        alignItems: 'left',
+                        textAlign: 'left',
+                    }}>
+                        <Box>
+                            <ClockIn />
+                        </Box>
+                
+                        <Box>
+                            <TimeDisplay />
+                        </Box>
+                    </Box>
 
-                <ClockIn />
-                <TimeDisplay />
+                    <Box>
+                        <Content1 />
+                    </Box>
+
+                    <Box>
+                        <BoxContent />
+                    </Box>
+
+                    <Box sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        textAlign: 'center',
+                        justifyContent: 'center',
+
+                    }}>
+                        <VerseDisplay />
+                    </Box>
+                </Box>
+
+
+
+                <Box>
+                    <Box sx={{
+                        display: 'flex',
+                        justifyContent: 'right',
+                        alignItems: 'right',
+                        textAlign: 'right',
+                    }}>
+                        {/* UserDisplay Component */}
+                        <Box sx={{
+
+                        }}>
+                            <UserDisplay />
+                        </Box>
+                    </Box>
+
+                    <Box sx={{
+                        display: 'flex',
+                        alignItems: 'right',
+                        textAlign: 'right',
+                    }}>
+                        {/* Event Component */}
+                        <Box sx={{
+                            pl: '10vh',
+                        }}>
+                            <EventHighlight />
+                        </Box>
+                    </Box>
+                </Box>
+
+
 
             </Box>
         </Box>
-        
+
     )
 }
 
