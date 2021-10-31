@@ -39,8 +39,6 @@ function Form() {
                     <Typography sx={{
                         fontWeight: 'bold',
                         fontSize: '40px',
-
-
                     }}
                     >Log in to your account!</Typography>
 
@@ -49,10 +47,10 @@ function Form() {
                         fontWeight: 'bold',
                         fontSize: '25px',
                         fontFamily: 'Montserrat',
-                        pb: '5px',
+                        pb: '8px',
                     }} >
 
-                        Username</Typography>
+                        Email</Typography>
                     <TextField
                         required
                         id="outlined-required"

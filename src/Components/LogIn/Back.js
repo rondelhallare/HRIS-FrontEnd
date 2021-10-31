@@ -24,9 +24,7 @@ function Back() {
                     minHeight: '60vh',
                     boxShadow: 10,
                     borderRadius: '20px',
-                }
-                }
-                >
+                }}>
                     <Header />
                     <Form />
                 </Box>

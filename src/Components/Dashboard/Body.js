@@ -14,7 +14,6 @@ import VerseDisplay from './VerseDisplay';
 function Body() {
     return (
         <Box>
-
             <BodyTitle />
 
             <Box sx={{
@@ -57,8 +56,6 @@ function Body() {
                         <VerseDisplay />
                     </Box>
                 </Box>
-
-
 
                 <Box>
                     <Box sx={{
