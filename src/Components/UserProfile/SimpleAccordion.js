@@ -14,12 +14,20 @@ import { Box } from '@mui/system';
 export default function SimpleAccordion() {
     return (
         <Box>
+            <Box sx = {{
+                mt: '-5px',
+                textAlign: 'center',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}>
+                <UserTitle />
+            </Box>
 
-            <UserTitle />
-
-            <UserAvatar />
-
-            <Accordion sx={{ bgcolor: 'secondary.main', }}>
+            <Box>
+                <UserAvatar />
+            </Box>
+            
+            <Accordion sx={{ bgcolor: 'secondary.main', boxShadow: 5,}}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
@@ -37,11 +45,10 @@ export default function SimpleAccordion() {
 
                 </AccordionSummary>
 
-                <AccordionDetails sx={{ bgcolor: 'pengu.main', }}>
+                <AccordionDetails sx={{ bgcolor: 'pengu.main',  }}>
 
                     <Typography>
                         <EmployeeBox1 />
-                        <EmployeeButton />
                     </Typography>
 
 
@@ -49,7 +56,7 @@ export default function SimpleAccordion() {
 
             </Accordion>
 
-            <Accordion sx={{ bgcolor: 'secondary.main', }}>
+            <Accordion sx={{ bgcolor: 'secondary.main', boxShadow: 5,}}>
 
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -71,7 +78,6 @@ export default function SimpleAccordion() {
 
                     <Typography>
                         <EmployeeBox2 />
-                        <EmployeeButton />
                     </Typography>
 
                 </AccordionDetails>

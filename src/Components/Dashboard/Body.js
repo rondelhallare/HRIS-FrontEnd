@@ -50,7 +50,7 @@ function Body() {
 
                 {/* right */}
                 <Box sx={{
-                    flexGrow: 1,
+                    // flexGrow: 1,
                 }}>
                     <Box sx={{
                         display: 'flex',

@@ -12,7 +12,8 @@ import Body from '../Dashboard/Body'
 import TimeBody from "../TimeLogs/TimeBody";
 import UserProf from "../UserProfile/UserProf";
 import Back from "../LogIn/Back";
-
+import NavUserDisplay from "./NavUserDisplay";
+import id from '../../Assets/id.png';
 function NavBarTry() {
 
     const location = useLocation()
@@ -25,17 +26,18 @@ function NavBarTry() {
             {
                 location.pathname !== "/LogIn" ?
 
-
                     <IconContext.Provider value={{ color: 'black' }}>
                         <Box className='navbar' sx={{
                             display: 'flex',
-                            fontSize: '2rem',
-                            bgcolor: '#43D6D1',
-                            height: '80px',
-                            justifyContent: 'start',
+                            justifyContent: 'space-between',
                             alignItems: 'center',
                         }}>
                             <Box sx={{
+                                display: 'flex',
+                                flexDirection: 'row',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                textAlign: 'center',
                                 ml: '1rem',
                                 fontSize: '2rem',
                                 background: 'none',
@@ -43,16 +45,23 @@ function NavBarTry() {
                                 <Link to='#' className='menu-bars'>
                                     <FaIcons.FaBars onClick={showSidebar} />
                                 </Link>
+                                <Typography sx={{
+                                    fontWeight: 'bold',
+                                    fontSize: '50px',
+                                    ml: '10px',
+                                    mt: '-5px',
+                                }}>
+                                    HRIS
+                                </Typography>
+
                             </Box>
 
-                            <Typography sx={{
-                                fontWeight: 'bold',
-                                fontSize: '50px',
-                                ml: '10px',
-                                mt: '-5px',
+
+                            <Box sx = {{
+                                pr: '10px',
                             }}>
-                                HRIS
-                            </Typography>
+                                <NavUserDisplay />
+                            </Box>
                         </Box>
 
                         <Box sx={{
@@ -68,11 +77,11 @@ function NavBarTry() {
                                                     <AiIcons.AiOutlineClose sx={{ fontSize: '2rem', }} />
                                                 </Link>
 
-                                                <Typography sx = {{
+                                                <Typography sx={{
                                                     fontWeight: 'bold',
                                                     fontSize: '50px',
-                                                     ml: '10px',
-                                                     mt: '-5px',
+                                                    ml: '10px',
+                                                    mt: '-5px',
                                                 }}>
                                                     HRIS
                                                 </Typography>
@@ -99,9 +108,10 @@ function NavBarTry() {
                                         );
                                     })}
                                 </ul>
+
+                        {/* Routing */}
                             </nav>
                         </Box>
-
 
                         {
                             location.pathname === "/LogIn" ?

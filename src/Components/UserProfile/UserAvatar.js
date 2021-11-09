@@ -15,11 +15,12 @@ const UserAvatar = () => {
         }}>
                 <Avatar sx={{
                     fontSize: '30px',
-                    color: 'white',
+                    color: 'black',
                     width: 76,
                     height: 76,
                     mr: '5px',
-                    bgcolor: 'secondary.main',
+                    bgcolor: 'primary.main',
+                    
 
                 }}>
                     RH
