@@ -6,19 +6,19 @@ import * as AiIcons from "react-icons/ai";
  const SidebarData = [
     {
         title: 'Home',
-        // path: <Body />,
+        path: '/Dashboard',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
     {
         title: 'TimeLogs',
-        path: '/timelogs',
+        path: '/TimeLogs',
         icon: <AiIcons.AiOutlineClockCircle />,
         cName: 'nav-text'
     },
     {
-        title: 'Department',
-        path: '/department',
+        title: 'User Profile',
+        path: '/UserProfile',
         icon: <FiIcons.FiLayers/>,
         cName: 'nav-text'
     },

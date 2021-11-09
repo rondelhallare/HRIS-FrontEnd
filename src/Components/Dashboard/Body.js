@@ -8,7 +8,7 @@ import Content1 from './Content1';
 import EventHighlight from './EventHighlight';
 import UserDisplay from './UserDisplay';
 import VerseDisplay from './VerseDisplay';
-
+import CalendarDash from './CalendarDash';
 
 
 function Body() {
@@ -19,6 +19,7 @@ function Body() {
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
+                pt: '-10px',
                 p: '10px',
                 m: '10px',
             }}>
@@ -32,7 +33,7 @@ function Body() {
                         <Box>
                             <ClockIn />
                         </Box>
-                
+
                         <Box>
                             <TimeDisplay />
                         </Box>
@@ -45,49 +46,54 @@ function Body() {
                     <Box>
                         <BoxContent />
                     </Box>
-
-                    <Box sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        textAlign: 'center',
-                        justifyContent: 'center',
-
-                    }}>
-                        <VerseDisplay />
-                    </Box>
                 </Box>
 
-                <Box>
+                {/* right */}
+                <Box sx={{
+                    flexGrow: 1,
+                }}>
                     <Box sx={{
                         display: 'flex',
                         justifyContent: 'right',
                         alignItems: 'right',
                         textAlign: 'right',
                     }}>
-                        {/* UserDisplay Component */}
-                        <Box sx={{
 
-                        }}>
-                            <UserDisplay />
-                        </Box>
                     </Box>
 
                     <Box sx={{
+                        mt: '-100px',
                         display: 'flex',
+                        justifyContent: 'center',
                         alignItems: 'right',
                         textAlign: 'right',
                     }}>
                         {/* Event Component */}
                         <Box sx={{
+                            width: '100%',
                             pl: '10vh',
                         }}>
-                            <EventHighlight />
+                            <Box>
+                                <CalendarDash />
+                            </Box>
+
+                            <Box>
+                                <EventHighlight />
+                            </Box>
                         </Box>
                     </Box>
                 </Box>
+            </Box>
 
-
-
+            <Box sx={{
+                mt: '-10px',
+                display: 'absolute',
+                bottom: 0,
+                alignItems: 'center',
+                textAlign: 'center',
+                justifyContent: 'center',
+            }}>
+                <VerseDisplay />
             </Box>
         </Box>
 

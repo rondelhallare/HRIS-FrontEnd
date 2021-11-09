@@ -8,7 +8,8 @@ function UserDisplay() {
             <Box sx={{
                 bgcolor: 'primary.main',
                 borderRadius: '10px',
-                height: '7vh',
+                maxHeight: '10vh',
+                boxShadow: 10,
             }}>
 
 

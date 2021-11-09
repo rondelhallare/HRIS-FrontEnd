@@ -10,11 +10,12 @@ const TimeDisplay = () => {
 
         }}>
             <Box color="secondary" sx={{
-                fontSize: '25px',
+                fontSize: '30px',
                 fontWeight: 'medium',
                 color: '#FFFFFF',
-                p: '12px',
-                m: '12px',
+                maxHeight: '30vh',
+                p: '10px',
+                m: '9px',
             }}>
                 TIME: 8:20:45
             </Box>

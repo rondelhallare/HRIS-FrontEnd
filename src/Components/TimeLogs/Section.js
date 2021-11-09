@@ -21,9 +21,10 @@ function Section() {
                     <Item sx={{
                         borderRadius: '10px',
                         bgcolor: 'primary.main',
-                        height: '78vh',
+                        minHeight: '75vh',
                         boxShadow: 3,
                         borderRadius: '10px',
+                        mt: '3px',
                     }}>
                         <Typography sx={{
                             fontSize: '25px',
@@ -33,7 +34,6 @@ function Section() {
                         }}>
                             Date
                         </Typography>
-
 
                         <Box sx={{
                             borderRadius: '5px',
@@ -59,9 +59,10 @@ function Section() {
                     <Item sx={{
                         borderRadius: '10px',
                         bgcolor: 'primary.main',
-                        height: '78vh',
+                        minHeight: '75vh',
                         boxShadow: 3,
                         borderRadius: '10px',
+                        mt: '3px',
                     }}>
                         <Typography sx={{
                             fontSize: '25px',
@@ -97,9 +98,10 @@ function Section() {
                     <Item sx={{
                         borderRadius: '10px',
                         bgcolor: 'primary.main',
-                        height: '78vh',
+                        minHeight: '75vh',
                         boxShadow: 3,
                         borderRadius: '10px',
+                        mt: '3px',
                     }}>
                         <Typography sx={{
                             fontSize: '25px',
@@ -134,9 +136,10 @@ function Section() {
                     <Item sx={{
                         borderRadius: '10px',
                         bgcolor: 'primary.main',
-                        height: '78vh',
+                        minHeight: '75vh',
                         boxShadow: 3,
                         borderRadius: '10px',
+                        mt: '3px',
                     }}>
                         <Typography sx={{
                             fontSize: '25px',
