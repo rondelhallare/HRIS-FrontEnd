@@ -26,6 +26,7 @@ function NavBarTry() {
             {
                 location.pathname !== "/LogIn" ?
 
+                    //Navbar component
                     <IconContext.Provider value={{ color: 'black' }}>
                         <Box className='navbar' sx={{
                             display: 'flex',
@@ -56,14 +57,17 @@ function NavBarTry() {
 
                             </Box>
 
-
+                            {/* Navigation User Display */}
                             <Box sx = {{
                                 pr: '10px',
+                                mt: '-5px',
                             }}>
                                 <NavUserDisplay />
                             </Box>
                         </Box>
 
+
+                        {/* Toggle Side Navbar */}
                         <Box sx={{
                             zIndex: 999,
                         }}>
@@ -77,6 +81,7 @@ function NavBarTry() {
                                                     <AiIcons.AiOutlineClose sx={{ fontSize: '2rem', }} />
                                                 </Link>
 
+                                            {/* HRIS NAME */}
                                                 <Typography sx={{
                                                     fontWeight: 'bold',
                                                     fontSize: '50px',
@@ -112,7 +117,6 @@ function NavBarTry() {
                         {/* Routing */}
                             </nav>
                         </Box>
-
                         {
                             location.pathname === "/LogIn" ?
                                 <Back />

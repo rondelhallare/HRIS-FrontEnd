@@ -3,7 +3,7 @@ import * as FiIcons from "react-icons/fi";
 import * as AiIcons from "react-icons/ai";
 // import Body from "./Components/Dashboard/Body";
 
- const SidebarData = [
+const SidebarData = [
     {
         title: 'Home',
         path: '/Dashboard',
@@ -19,13 +19,7 @@ import * as AiIcons from "react-icons/ai";
     {
         title: 'User Profile',
         path: '/UserProfile',
-        icon: <FiIcons.FiLayers/>,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Events',
-        path: '/team',
-        icon: <FiIcons.FiClipboard />,
+        icon: <FiIcons.FiLayers />,
         cName: 'nav-text'
     },
     {
@@ -34,6 +28,12 @@ import * as AiIcons from "react-icons/ai";
         icon: <FiIcons.FiCalendar />,
         cName: 'nav-text'
     },
+    // {
+    //     title: 'About Us',
+    //     path: '/about',
+    //     icon: <FiIcons.FiClipboard />,
+    //     cName: 'nav-text'
+    // },
     {
         title: 'Support',
         path: '/support',
@@ -42,4 +42,4 @@ import * as AiIcons from "react-icons/ai";
     }
 ]
 
-export default SidebarData 
+export default SidebarData
