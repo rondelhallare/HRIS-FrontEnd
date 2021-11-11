@@ -17,7 +17,7 @@ function App() {
       <Route path = '/Dashboard' component = {Body} />
       <Route path = '/UserProfile' component = {UserProf} />
       <Route path = '/TimeLogs' component = {TimeBody} />
-      <Route path='/SupportEmail' component = {SupportEmail} />
+      <Route path='/Support' component = {SupportEmail} />
     </Switch>
 
 

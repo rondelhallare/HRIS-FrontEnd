@@ -59,7 +59,7 @@ function NavBarTry() {
                             </Box>
 
                             {/* Navigation User Display */}
-                            <Box sx = {{
+                            <Box sx={{
                                 pr: '10px',
                                 mt: '-5px',
                             }}>
@@ -82,7 +82,7 @@ function NavBarTry() {
                                                     <AiIcons.AiOutlineClose sx={{ fontSize: '2rem', }} />
                                                 </Link>
 
-                                            {/* HRIS NAME */}
+                                                {/* HRIS NAME */}
                                                 <Typography sx={{
                                                     fontWeight: 'bold',
                                                     fontSize: '50px',
@@ -115,7 +115,7 @@ function NavBarTry() {
                                     })}
                                 </ul>
 
-                        {/* Routing */}
+                                {/* Routing */}
                             </nav>
                         </Box>
                         {
@@ -131,11 +131,10 @@ function NavBarTry() {
                                         location.pathname === "/TimeLogs" ?
                                             <TimeBody />
                                             :
-                                            
-                                        location.pathname === "/Support" ?
-                                            <SupportEmail />
-                                            :
-                                            ""
+                                            location.pathname === "/Support" ?
+                                                <SupportEmail />
+                                                :
+                                                ""
                         }
                     </IconContext.Provider>
                     :
