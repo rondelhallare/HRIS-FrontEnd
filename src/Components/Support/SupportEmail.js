@@ -25,10 +25,19 @@ function SupportEmail() {
                         borderRadius: '15px',
                         justifyContent: 'center'
                     }}>
+
+                    <CardContent>
+                        {/* Headline text */}
+                        <Typography gutterBottom variant="h3" fontFamily="monserrat"
+                            align="center">
+                            Send us your concerns!
+                        </Typography>
+                    </CardContent>
+
                 </Card>
-            </Grid>           
+            </Grid>
         </div>
-        
+
     )
 }
 
