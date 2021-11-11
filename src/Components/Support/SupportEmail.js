@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, TextField, Button, Card, CardContent, Typography } from '@material-ui/core';
+import { Grid, TextField, Button, Card, CardContent, Typography } from '@mui/material';
 
 function SupportEmail() {
     return (
