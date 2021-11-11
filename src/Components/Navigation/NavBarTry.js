@@ -15,6 +15,7 @@ import Back from "../LogIn/Back";
 import NavUserDisplay from "./NavUserDisplay";
 import id from '../../Assets/id.png';
 import SupportEmail from '../Support/SupportEmail';
+import Notice from '../NoticeBoard/Notice';
 function NavBarTry() {
 
     const location = useLocation()
@@ -133,6 +134,9 @@ function NavBarTry() {
                                             :
                                             location.pathname === "/Support" ?
                                                 <SupportEmail />
+                                                :
+                                                location.pathname === "/NoticeBoard" ?
+                                                <Notice />
                                                 :
                                                 ""
                         }

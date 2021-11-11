@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Card, CardContent, Image } from '@mui/material'
-import image from '../Assets/announcement_1.png';
+import announce from '../../Assets/announce.png';
 
 const Announcements = () => {
     return (
@@ -12,7 +12,7 @@ const Announcements = () => {
                 <CardContent>
                     <Grid container style={{ justifyContent: "center", alignItems: "center" }}>
                         <Grid item sm={10} md={10} xs={10} lg={8}>
-                            <img src={image} alt="" style={{ width: "80%", height: "auto" }} />
+                            <img src={announce} alt="" style={{ width: "80%", height: "auto" }} />
                         </Grid>
                         <Grid item md style={{ padding: "50px 20px 20px", textAlign: "justify" }}>
                             <Typography variant="p" component="p" style={{ textAlign: "justify", fontSize: "1.2rem" }}>

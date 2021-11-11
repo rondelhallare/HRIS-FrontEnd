@@ -1,4 +1,5 @@
 import React from 'react'
+import NoticeGrid from './NoticeGrid'
 
 function Notice() {
     return (

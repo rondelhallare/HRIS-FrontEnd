@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Typography, Card, Container, CardContent } from '@mui/material'
-import event_1 from '../Assets/event_1.jpg'
-import event_2 from '../Assets/event_2.jpg'
+import event_1 from '../../Assets/event_1.jpg'
+import event_2 from '../../Assets/event_2.jpg'
 import EventComponent from './EventComponent'
 
 const Events = () => {

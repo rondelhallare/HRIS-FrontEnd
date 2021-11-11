@@ -1,10 +1,10 @@
 import React from 'react'
 import './NoticeGrid.css'
 import { Grid, Typography, Container, IconButton } from '@mui/material'
-import { ArrowLeft } from '@material-ui/icons'
-import Announcements from './Components/Announcements'
-import Events from './Components/Events'
-import News from './Components/News'
+// import { ArrowLeft } from '@material-ui/icons'
+import Announcement from './Announcement'
+import Event from './Event'
+import News from './News'
 
 const App = () => {
     return (
@@ -13,7 +13,7 @@ const App = () => {
                 <Grid container style={{alignItems:"center"}}>
                     <Grid item>
                         <IconButton aria-label="back">
-                            <ArrowLeft style={{fontSize:"40px"}} />
+                            {/* <ArrowLeft style={{fontSize:"40px"}} /> */}
                         </IconButton>
                     </Grid>
                     <Grid item>
@@ -25,8 +25,8 @@ const App = () => {
 
                 <Grid container spacing={1}>
                     <Grid item lg sx={{ mb: 1.5 }}>
-                        <Announcements />
-                        <Events />
+                        <Announcement />
+                        <Event />
                     </Grid>
                     <Grid item component="aside" lg={3}>
                         <News />

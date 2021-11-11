@@ -6,6 +6,7 @@ import { Switch, Route, Link, BrowserRouter as router } from 'react-router-dom'
 import './App.css'
 import TimeBody from "./Components/TimeLogs/TimeBody";
 import SupportEmail from "./Components/Support/SupportEmail";
+import Notice from "./Components/NoticeBoard/Notice";
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <Route path = '/UserProfile' component = {UserProf} />
       <Route path = '/TimeLogs' component = {TimeBody} />
       <Route path='/Support' component = {SupportEmail} />
+      <Route path='/NoticeBoard' component = {Notice} />
     </Switch>
 
 
