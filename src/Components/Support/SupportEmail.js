@@ -34,6 +34,16 @@ function SupportEmail() {
                         </Typography>
                     </CardContent>
 
+                    {/* message to customers */}
+                    <Typography variant="h4"
+                        classname="Message"
+                        color="textPrimary"
+                        component="p"
+                        align="justify"
+                        gutterBottom>
+                        If you have any concerns and problems, feel free to contact us and leave an email.
+                        We would be more than happy to respond to you. Thank you and have a nice day!
+                </Typography>
                 </Card>
             </Grid>
         </div>
