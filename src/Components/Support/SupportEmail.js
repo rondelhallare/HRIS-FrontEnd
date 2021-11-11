@@ -72,6 +72,18 @@ function SupportEmail() {
                         fullWidth required
                     />
                 </Grid>
+                
+                {/* Message section */}
+                <Grid item xs={12}>
+                    <TextField
+                        label="Message"
+                        className="Message"
+                        multiline rows={9}
+                        placeholder="Enter your message here"
+                        variant="outlined"
+                        fullWidth required
+                    />
+                </Grid>
             </form>
 
 
