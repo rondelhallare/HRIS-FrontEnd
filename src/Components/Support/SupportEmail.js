@@ -46,6 +46,23 @@ function SupportEmail() {
                 </Typography>
                 </Card>
             </Grid>
+            <form>
+                <Grid container spacing={1}>
+
+                    {/* Name section */}
+                    <Grid xs={1} sm={12} item>
+                        <TextField
+                            placeholder="lastname, firstname, middlename"
+                            className="Name"
+                            label="Complete Name"
+                            variant="outlined"
+                            fullWidth required
+                        />
+                    </Grid>
+                </Grid>
+            </form>
+
+
         </div>
 
     )
