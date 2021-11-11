@@ -90,11 +90,23 @@ function SupportEmail() {
                     className="ButtonGrid"
                     container item xs={12}
                     justify="flex-end"
-                ></Grid>
+                >       
+                
+                <Button
+                    className="Button"
+                    type="Submit"
+                    variant="contained"
+                    color="primary"
+                >Send
+                  </Button>
+                </Grid>
+                
+
+                
             </form>
 
 
-        </div>
+        </div >
 
     )
 }
