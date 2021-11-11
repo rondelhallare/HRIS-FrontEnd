@@ -72,7 +72,7 @@ function SupportEmail() {
                         fullWidth required
                     />
                 </Grid>
-                
+
                 {/* Message section */}
                 <Grid item xs={12}>
                     <TextField
@@ -84,6 +84,13 @@ function SupportEmail() {
                         fullWidth required
                     />
                 </Grid>
+
+                {/* Submit Button section */}
+                <Grid
+                    className="ButtonGrid"
+                    container item xs={12}
+                    justify="flex-end"
+                ></Grid>
             </form>
 
 
