@@ -60,6 +60,18 @@ function SupportEmail() {
                         />
                     </Grid>
                 </Grid>
+
+                {/* Email section */}
+                <Grid item xs={12}>
+                    <TextField
+                        type="email"
+                        className="Email"
+                        placeholder="Enter email"
+                        label="Email"
+                        variant="outlined"
+                        fullWidth required
+                    />
+                </Grid>
             </form>
 
 
