@@ -6,7 +6,6 @@ import TimeDisplay from './TimeDisplay';
 import BoxContent from './BoxContent';
 import Content1 from './Content1';
 import EventHighlight from './EventHighlight';
-import UserDisplay from './UserDisplay';
 import VerseDisplay from './VerseDisplay';
 import CalendarDash from './CalendarDash';
 
