@@ -5,15 +5,22 @@ import event_2 from '../../Assets/event_2.jpg'
 import EventComponent from './EventComponent'
 
 const Events = () => {
-    const dummyText = "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+    const
+        dummyText = "Company event coming soon. We will post and update you shortly!"
     return (
         <div className="card-wrapper events">
             <div className="box">
-                <Card className="card" style={{padding:0}}>
+                <Card className="card" style={{ padding: 0 }}>
                     <div className="title">
-                        <h3>Events</h3>
+                        <Typography sx = {{
+                            fontSize: '25px',
+                            fontWeight: 'medium',
+                            fontFamily: 'Montserrat',
+                        }}>
+                            Events
+                        </Typography>
                     </div>
-                    <CardContent style={{padding:0}}>
+                    <CardContent style={{ padding: 0 }}>
                         <Grid container spacing={2} >
                             <Grid item sm>
                                 <EventComponent image={event_1} text={dummyText} />

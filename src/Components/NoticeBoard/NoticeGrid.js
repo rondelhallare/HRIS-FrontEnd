@@ -5,10 +5,11 @@ import Announcement from './Announcement'
 import Event from './Event'
 import News from './News'
 
+
 const App = () => {
     return (
         <div className="App">
-            <Container style={{ marginTop: "10px", }} variant="fluid">
+            <Container variant="fluid">
                 <Grid container style={{ alignItems: "center" }}>
                     <Grid item>
                         <Typography variant="h2" sx={{
