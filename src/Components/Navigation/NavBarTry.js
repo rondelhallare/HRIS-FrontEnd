@@ -16,6 +16,7 @@ import NavUserDisplay from "./NavUserDisplay";
 import id from '../../Assets/id.png';
 import SupportEmail from '../Support/SupportEmail';
 import Notice from '../NoticeBoard/Notice';
+import SupportBack from '../Support/SupportBack';
 function NavBarTry() {
 
     const location = useLocation()
@@ -133,7 +134,7 @@ function NavBarTry() {
                                             <TimeBody />
                                             :
                                             location.pathname === "/Support" ?
-                                                <SupportEmail />
+                                                <SupportBack />
                                                 :
                                                 location.pathname === "/NoticeBoard" ?
                                                 <Notice />

@@ -7,6 +7,7 @@ import './App.css'
 import TimeBody from "./Components/TimeLogs/TimeBody";
 import SupportEmail from "./Components/Support/SupportEmail";
 import Notice from "./Components/NoticeBoard/Notice";
+import SupportBack from "./Components/Support/SupportBack";
 
 
 
@@ -18,7 +19,7 @@ function App() {
       <Route path = '/Dashboard' component = {Body} />
       <Route path = '/UserProfile' component = {UserProf} />
       <Route path = '/TimeLogs' component = {TimeBody} />
-      <Route path='/Support' component = {SupportEmail} />
+      <Route path='/Support' component = {SupportBack} />
       <Route path='/NoticeBoard' component = {Notice} />
     </Switch>
 

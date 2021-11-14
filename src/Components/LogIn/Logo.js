@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box } from '@mui/system';
-import { Typography } from '@mui/material';
 import id from '../../Assets/id.png'
 
 const Logo = () => {
