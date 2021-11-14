@@ -26,6 +26,7 @@ const News = () => {
                             A video captured by Singh shows the penguin wandering around on the beach. In conclusion, Penguins are awesome.
                             <br /> <br />
                             -Pengu-
+                            <br /> <br />
                         </Typography>
                     </CardContent>
                 </Card>
