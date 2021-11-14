@@ -13,10 +13,11 @@ import TimeBody from "../TimeLogs/TimeBody";
 import UserProf from "../UserProfile/UserProf";
 import Back from "../LogIn/Back";
 import NavUserDisplay from "./NavUserDisplay";
-import id from '../../Assets/id.png';
 import SupportEmail from '../Support/SupportEmail';
 import Notice from '../NoticeBoard/Notice';
 import SupportBack from '../Support/SupportBack';
+import id from '../../Assets/id.png'
+
 function NavBarTry() {
 
     const location = useLocation()
@@ -115,7 +116,13 @@ function NavBarTry() {
                                             </li>
                                         );
                                     })}
+                                    <Box sx = {{
+                                        mt: '35vh',
+                                    }}>
+                                        <img src={id} alt="" height={200} />
+                                    </Box>
                                 </ul>
+
 
                                 {/* Routing */}
                             </nav>
@@ -137,9 +144,9 @@ function NavBarTry() {
                                                 <SupportBack />
                                                 :
                                                 location.pathname === "/NoticeBoard" ?
-                                                <Notice />
-                                                :
-                                                ""
+                                                    <Notice />
+                                                    :
+                                                    ""
                         }
                     </IconContext.Provider>
                     :
