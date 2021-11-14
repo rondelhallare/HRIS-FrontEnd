@@ -7,16 +7,26 @@ const Announcements = () => {
         <div className="card-wrapper">
             <Card variant="outlined" className="card announcements">
                 <div className="title">
-                    <h3>Announcement</h3>
+                    <Typography sx = {{
+                        fontSize: '25px',
+                        fontWeight: 'medium',
+                        fontFamily: 'Montserrat',
+                    }}>
+                        Announcement
+                    </Typography>
                 </div>
                 <CardContent>
                     <Grid container style={{ justifyContent: "center", alignItems: "center" }}>
-                        <Grid item sm={10} md={10} xs={10} lg={8}>
-                            <img src={announce} alt="" style={{ width: "80%", height: "auto" }} />
+                        <Grid>
+                            <img src={announce} alt="" style={{ maxWidth: "50vh", maxHeight: "80vh" }} />
                         </Grid>
-                        <Grid item md style={{ padding: "50px 20px 20px", textAlign: "justify" }}>
-                            <Typography variant="p" component="p" style={{ textAlign: "justify", fontSize: "1.2rem" }}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <Grid item md style={{  textAlign: "justify" }}>
+                            <Typography variant="p" sx = {{textAlign: "justify", fontSize: "20px",fontWeight: 'medium', fontFamily: 'Montserrat'}}>
+                                Welcome to the Notice Board! where you will see all announcements, events and news within the company.
+                                <br />
+                                <br />
+                                The Official presentation of the 
+                                Human Resources Infromation System is Next Week! we invite everyone to participate and watch the presentation. Don't miss it!
                             </Typography>
                         </Grid>
                     </Grid>

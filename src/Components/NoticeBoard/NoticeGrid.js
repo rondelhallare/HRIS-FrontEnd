@@ -1,7 +1,6 @@
 import React from 'react'
 import './NoticeGrid.css'
-import { Grid, Typography, Container, IconButton } from '@mui/material'
-// import { ArrowLeft } from '@material-ui/icons'
+import { Grid, Typography, Container } from '@mui/material'
 import Announcement from './Announcement'
 import Event from './Event'
 import News from './News'
@@ -9,15 +8,16 @@ import News from './News'
 const App = () => {
     return (
         <div className="App">
-            <Container style={{ marginTop: "10px" }} variant="fluid">
-                <Grid container style={{alignItems:"center"}}>
+            <Container style={{ marginTop: "10px", }} variant="fluid">
+                <Grid container style={{ alignItems: "center" }}>
                     <Grid item>
-                        <IconButton aria-label="back">
-                            {/* <ArrowLeft style={{fontSize:"40px"}} /> */}
-                        </IconButton>
-                    </Grid>
-                    <Grid item>
-                        <Typography variant="h4" component="p" color="dark" style={{ textAlign: 'left', margin:0 }}>
+                        <Typography variant="h2" sx={{
+                            color: 'black',
+                            fontSize: '50px',
+                            textAlign: 'left',
+                            fontWeight: 'medium',
+                            fontFamily: 'Montserrat',
+                        }}>
                             Notice Board
                         </Typography>
                     </Grid>
