@@ -2,13 +2,13 @@ import React from 'react'
 import { Box } from '@mui/system';
 import Header from './Header';
 import Form from './Form';
-import loginBG from '../../Assets/loginBG.png';
+import wave2 from '../../Assets/wave2.png';
 
 function Back() {
     return (
         <Box sx = {{
             height: "calc(100vh)",
-            backgroundImage: `url(${loginBG})`,
+            backgroundImage: `url(${wave2})`,
         }}>
             <Box sx={{
                 display: 'flex',

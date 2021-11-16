@@ -8,12 +8,12 @@ import Content1 from './Content1';
 import EventHighlight from './EventHighlight';
 import VerseDisplay from './VerseDisplay';
 import CalendarDash from './CalendarDash';
-import wave2 from '../../Assets/wave2.png';
+import Trippy from '../../Assets/Trippy.png';
 
 function Body() {
     return (
         <Box sx = {{
-            backgroundImage: `url(${wave2})`,
+            backgroundImage: `url(${Trippy})`,
             height: "calc(100vh - 80px)",
         }}>
             <BodyTitle />
