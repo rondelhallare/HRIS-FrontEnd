@@ -8,11 +8,14 @@ import Content1 from './Content1';
 import EventHighlight from './EventHighlight';
 import VerseDisplay from './VerseDisplay';
 import CalendarDash from './CalendarDash';
-
+import wave2 from '../../Assets/wave2.png';
 
 function Body() {
     return (
-        <Box>
+        <Box sx = {{
+            backgroundImage: `url(${wave2})`,
+            height: "calc(100vh - 80px)",
+        }}>
             <BodyTitle />
 
             <Box sx={{
