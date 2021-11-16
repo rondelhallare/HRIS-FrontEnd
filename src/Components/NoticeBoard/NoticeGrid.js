@@ -10,9 +10,10 @@ const App = () => {
     return (
         <div className="App">
             <Container variant="fluid">
-                <Grid container style={{ alignItems: "center" }}>
+                <Grid container style={{ alignItems: "center", }}>
                     <Grid item>
                         <Typography variant="h2" sx={{
+                            mt: '25px',
                             color: 'black',
                             fontSize: '50px',
                             textAlign: 'left',

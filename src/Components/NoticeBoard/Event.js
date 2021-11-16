@@ -6,11 +6,11 @@ import EventComponent from './EventComponent'
 
 const Events = () => {
     const
-        dummyText = "Company event coming soon. We will post and update you shortly!"
+        dummyText = "There are no events posted yet. We will update you as soon as we can. Thank you!"
     return (
         <div className="card-wrapper events">
             <div className="box">
-                <Card className="card" style={{ padding: 0 }}>
+                <Card className="card" sx = {{boxShadow: 10,}}>
                     <div className="title">
                         <Typography sx = {{
                             fontSize: '25px',

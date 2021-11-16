@@ -6,16 +6,16 @@ const News = () => {
     return (
         <div className="card-wrapper news">
             <div className="box">
-                <Card variant="outlined" className="card" sx={{ maxHeight: '100vh' }} >
+                <Card variant="outlined" className="card" sx={{ maxHeight: '100vh', boxShadow: 10, }} >
                     <div className="title">
                         <Typography sx={{ fontWeight: 'medium', fontFamily: 'Montserrat', fontSize: '25px', }}>
                             News
                         </Typography>
                     </div>
                     <CardContent>
-                        <Grid container sx={{ justifyContent: "center" }} >
+                        <Grid container sx={{ justifyContent: "center", }} >
                             <Grid item sm={5} xs={5} lg={10}>
-                                <img src={announce} alt="" style={{ width: "100%" }} />
+                                <img src={announce} alt="" style={{ width: "100%", }} />
                             </Grid>
                         </Grid>
                         <Typography  sx = {{ textAlign: "justify", fontWeight: 'medium', fontSize: '15px'  }}>
