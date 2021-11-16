@@ -2,16 +2,19 @@ import React from 'react'
 import { Box } from '@mui/system';
 import Header from './Header';
 import Form from './Form';
+import loginBG from '../../Assets/loginBG.png';
 
 function Back() {
     return (
-        <Box>
+        <Box sx = {{
+            height: "calc(100vh)",
+            backgroundImage: `url(${loginBG})`,
+        }}>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
                 textAlign: 'center',
                 justifyContent: 'center',
-                bgcolor: 'secondary.main',
                 minHeight: '100vh',
                 width: 'auto',
 

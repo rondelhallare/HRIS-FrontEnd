@@ -11,8 +11,8 @@ function UserProf() {
             textAlign: 'center',
             justifyContent: 'center',
             bgcolor: 'white',
-            height: "calc(100vh - 80px)",
             width: 'auto',
+            height: "calc(100vh - 80px)",
             backgroundImage: `url(${bg2})`,
         }}>
             <Box sx={{
