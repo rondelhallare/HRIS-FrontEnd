@@ -13,7 +13,6 @@ import TimeBody from "../TimeLogs/TimeBody";
 import UserProf from "../UserProfile/UserProf";
 import Back from "../LogIn/Back";
 import NavUserDisplay from "./NavUserDisplay";
-import SupportEmail from '../Support/SupportEmail';
 import Notice from '../NoticeBoard/Notice';
 import SupportBack from '../Support/SupportBack';
 import id from '../../Assets/id.png'

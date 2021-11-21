@@ -5,7 +5,6 @@ import NavBar from "./Components/Navigation/NavBar";
 import { Switch, Route, Link, BrowserRouter as router } from 'react-router-dom'
 import './App.css'
 import TimeBody from "./Components/TimeLogs/TimeBody";
-import SupportEmail from "./Components/Support/SupportEmail";
 import Notice from "./Components/NoticeBoard/Notice";
 import SupportBack from "./Components/Support/SupportBack";
 
