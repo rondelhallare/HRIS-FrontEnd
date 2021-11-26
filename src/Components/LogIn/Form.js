@@ -1,4 +1,6 @@
-
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router';
+import { axiosAPI } from '../Middleware/Axios'
 import { Button } from '@mui/material';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
@@ -8,6 +10,25 @@ import MiniLogo from "./MiniLogo";
 
 
 function Form() {
+    const history = useHistory();
+    const [formData, setFormData] = useState({
+        username: "",
+        password: ""
+    });
+    useEffect(() => {
+        if (localStorage.getItem("Authorization")) {
+            history.push("/Dashboard")
+        }
+    }, []);
+    const submitCredentials = async () => {
+        console.log(formData)
+        console.log(`/login?password=${formData.username}&email=${formData.password}`)
+        const loginResponse = await axiosAPI.get(`/login?password=${formData.password}&email=${formData.username}`)
+        console.log(loginResponse.data)
+        localStorage.setItem("Authorization", loginResponse.data.Data)
+        history.push("/Dashboard")
+    }
+
     return (
         <Box sx={{
             Display: 'flex',
@@ -49,8 +70,8 @@ function Form() {
                         fontFamily: 'Montserrat',
                         pb: '8px',
                     }} >
-
-                        Email</Typography>
+                        Email
+                    </Typography>
                     <TextField
                         required
                         id="outlined-required"
@@ -60,8 +81,18 @@ function Form() {
                         sx={{
                             width: '100%',
                             borderRadius: '20px',
-
                         }}
+                        onChange={
+                            (e) => {
+                                console.log(e.target.value)
+                                setFormData((prevData) => {
+                                    return {
+                                        ...prevData,
+                                        username: e.target.value
+                                    }
+                                })
+                            }
+                        }
                     />
 
                     <br></br>
@@ -78,10 +109,21 @@ function Form() {
                         id="outlined-required"
                         label="Required"
                         defaultValue=""
+                        type="password"
                         sx={{
                             width: '100%',
                             borderRadius: '20px',
                         }}
+                        onChange={
+                            (e) => {
+                                setFormData((prevData) => {
+                                    return {
+                                        ...prevData,
+                                        password: e.target.value
+                                    }
+                                })
+                            }
+                        }
                     />
                     <br></br>
                     <br></br>
@@ -96,7 +138,7 @@ function Form() {
                             fontWeight: 'medium',
                             color: '#FFFFFF',
                             borderRadius: '10px'
-                        }}>
+                        }} onClick={() => { submitCredentials() }}>
                             Sign In
                         </Button>
                     </Box>

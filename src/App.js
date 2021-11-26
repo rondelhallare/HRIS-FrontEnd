@@ -14,7 +14,7 @@ function App() {
   return (
     <Switch>
       <NavBar />
-      <Route path='/LogIn' component = {Back} />
+      <Route path='/' component = {Back} />
       <Route path = '/Dashboard' component = {Body} />
       <Route path = '/UserProfile' component = {UserProf} />
       <Route path = '/TimeLogs' component = {TimeBody} />

@@ -1,9 +1,27 @@
-import React from 'react'
 import { Box } from '@mui/system';
 import SupportHeader from './SupportHeader';
 import SupportForm from './SupportForm';
+import React, { useState, useEffect } from 'react';
+import { axiosAPI } from '../Middleware/Axios';
 
 function SupportBack() {
+    const [formData, setFormData] = useState({
+        full_name: "",
+        email: "",
+        message:"",
+    });
+    const [messageData, setmessageData] = useState(1)
+
+    const submitForm = async () => {
+        const loginResponse = await axiosAPI.get(`/support/create?full_name=${formData.full_name}&email=${formData.email}&message=${formData.message}`)
+        console.log(loginResponse.data)
+        setmessageData(0)
+        setFormData({
+            full_name: "",
+            email: "",
+            message:"",
+        })
+    }
     return (
         <Box sx={{
             background: 'linear-gradient(0deg, #0ABAB5, #0ABAB5, #C5FFFD)',
@@ -31,7 +49,7 @@ function SupportBack() {
                     borderRadius: '20px',
                 }}>
                     <SupportHeader />
-                    <SupportForm />
+                    <SupportForm data = {{messageData, setFormData, submitForm, formData}} />
                 </Box>
             </Box>
         </Box>

@@ -53,21 +53,6 @@ const EmployeeBox1 = () => {
 
                 <br></br>
 
-                <Typography sx = {{
-                    fontWeight: 'medium',
-                    fontSize: '25px',
-                    textAlign: 'left',
-                }}>
-                    Password
-                </Typography>
-
-                <Typography sx = {{
-                    fontWeight: 'Bold',
-                    fontSize: '25px',
-                    textAlign: 'left',
-                }}>
-                    ***********
-                </Typography>
             </Box>
 
         </Box>

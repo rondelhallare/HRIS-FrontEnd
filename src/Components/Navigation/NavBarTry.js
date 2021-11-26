@@ -16,6 +16,7 @@ import NavUserDisplay from "./NavUserDisplay";
 import Notice from '../NoticeBoard/Notice';
 import SupportBack from '../Support/SupportBack';
 import id from '../../Assets/id.png'
+import LogOut from './LogOut';
 
 function NavBarTry() {
 
@@ -27,7 +28,7 @@ function NavBarTry() {
     return (
         <>
             {
-                location.pathname !== "/LogIn" ?
+                location.pathname !== "/" ?
 
                     //Navbar component
                     <IconContext.Provider value={{ color: 'black' }}>
@@ -64,9 +65,14 @@ function NavBarTry() {
                             <Box sx={{
                                 pr: '10px',
                                 mt: '-5px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
                             }}>
                                 <NavUserDisplay />
+                                <LogOut />
                             </Box>
+                                
                         </Box>
 
 
@@ -115,7 +121,7 @@ function NavBarTry() {
                                             </li>
                                         );
                                     })}
-                                    <Box sx = {{
+                                    <Box sx={{
                                         mt: '35vh',
                                     }}>
                                         <img src={id} alt="" height={200} />
@@ -127,7 +133,7 @@ function NavBarTry() {
                             </nav>
                         </Box>
                         {
-                            location.pathname === "/LogIn" ?
+                            location.pathname === "/" ?
                                 <Back />
                                 :
                                 location.pathname === "/Dashboard" ?

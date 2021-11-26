@@ -1,3 +1,4 @@
+import Clock from 'react-live-clock';
 import React from 'react'
 import { bgcolor, Box } from '@mui/system';
 
@@ -17,7 +18,7 @@ const TimeDisplay = () => {
                 p: '10px',
                 m: '9px',
             }}>
-                TIME: 8:20:45
+                TIME: <Clock format={'h:mm:ssa'} ticking= {true} />
             </Box>
         </Box>
 

@@ -5,7 +5,8 @@ import TextField from '@mui/material/TextField';
 
 import React from 'react'
 
-function SupportForm() {
+function SupportForm({data}) {
+    console.log(data)
     return (
         <Box sx={{
             Display: 'flex',
@@ -38,7 +39,11 @@ function SupportForm() {
                         fontWeight: 'bold',
                         fontSize: '40px',
                     }}
-                    >Send Us Your Concern!</Typography>
+                    >{
+                        data.messageData === 1?
+                        "Send Us Your Concern!":
+                        "Message has been Sent!"
+                    }</Typography>
 
                     <br></br>
                     <Typography sx={{
@@ -59,6 +64,19 @@ function SupportForm() {
                             width: '100%',
                             borderRadius: '20px',
                         }}
+                        onChange={
+                            (e) => {
+                                data.setFormData((prevData) => {
+                                    return {
+                                        ...prevData,
+                                        full_name: e.target.value
+                                    }
+                                })
+                            }
+                        }
+                        value = {
+                            data.formData.full_name
+                        }
                     />
 
                     <br></br>
@@ -79,6 +97,19 @@ function SupportForm() {
                             width: '100%',
                             borderRadius: '20px',
                         }}
+                        onChange={
+                            (e) => {
+                                data.setFormData((prevData) => {
+                                    return {
+                                        ...prevData,
+                                        email: e.target.value
+                                    }
+                                })
+                            }
+                        }
+                        value = {
+                            data.formData.email
+                        }
                     />
                     <br></br>
                     <br></br>
@@ -99,6 +130,19 @@ function SupportForm() {
                             width: '100%',
                             borderRadius: '20px',
                         }}
+                        onChange={
+                            (e) => {
+                                data.setFormData((prevData) => {
+                                    return {
+                                        ...prevData,
+                                        message: e.target.value
+                                    }
+                                })
+                            }
+                        }
+                        value = {
+                            data.formData.message
+                        }
                     />
                     <br></br>
                     <br></br>
@@ -113,7 +157,7 @@ function SupportForm() {
                             fontWeight: 'medium',
                             color: '#FFFFFF',
                             borderRadius: '10px'
-                        }}>
+                        }}onClick={() => { data.submitForm() }}>
                             Submit
                         </Button>
                     </Box>
